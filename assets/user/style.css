@@ -1,0 +1,59 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: rgb(219, 205, 205);
+}
+.sidebar
+{
+    background:rgb(107, 74, 12);
+    backdrop-filter: blur(15px);
+    width: 230px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    }
+.sidebar .menu
+{
+    width: 100%;
+    margin-top: 80px;
+}
+.sidebar .menu .item
+{
+    position: relative;
+    cursor: pointer;
+}
+.sidebar .menu .item a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 30px;
+    display: block;
+    line-height: 60px;
+}
+.sidebar .menu .item a:hover{
+    background: #1e9c8b;
+    transition: 0.9s ease;
+}
+ .sidebar .menu .item i
+{
+    margin-right: 15px;
+} 
+ .sidebar .menu .item a .dropdown
+{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+} 
+ .sidebar .menu .item .sub-menu
+{
+    background:#e29d1d;
+    display: none;
+}
+.sidebar .menu .item .sub-menu a
+{
+    padding-left: 80px;
+} 
